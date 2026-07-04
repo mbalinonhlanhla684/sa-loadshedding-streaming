@@ -8,7 +8,7 @@ const TOPIC = 'loadshedding-updates';
 
 const kafka = new Kafka({
   clientId: 'sa-loadshedding-producer',
-  brokers: ['localhost:9092'],
+  brokers: ['kafka.railway.internal:29092'],
 });
 
 const producer = kafka.producer();
