@@ -7,7 +7,7 @@ const WS_PORT = 4001;
 
 const kafka = new Kafka({
   clientId: 'sa-loadshedding-consumer',
-  brokers: ['localhost:9092'],
+  brokers: ['kafka.railway.internal:29092'],
 });
 
 const consumer = kafka.consumer({ groupId: 'dashboard-consumer-group' });
