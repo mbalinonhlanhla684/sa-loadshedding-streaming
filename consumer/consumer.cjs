@@ -2,7 +2,7 @@
 const { Kafka } = require('kafkajs');
 const { WebSocketServer } = require('ws');
 
-const TOPIC = 'loadshedding-updates';
+const TOPIC = 'loadshedding-updates-v2';
 const WS_PORT = 4001;
 
 const kafka = new Kafka({
