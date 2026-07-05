@@ -4,7 +4,7 @@ const { Kafka } = require('kafkajs');
 const fetch = require('node-fetch');
 
 const TOKEN = process.env.ESKOMSEPUSH_TOKEN;
-const TOPIC = 'loadshedding-updates';
+const TOPIC = 'loadshedding-updates-v2';
 
 const kafka = new Kafka({
   clientId: 'sa-loadshedding-producer',
